@@ -1,0 +1,25 @@
+$dark-blue-dm-elements: hsl(209, 23%, 22%);
+$very-dark-blue-dm-bg: hsl(207, 26%, 17%);
+$very-dark-blue-lm-text:hsl(200, 15%, 8%);
+$dark-gray-lm-input: hsl(0, 0%, 52%);
+$very-light-gray-lm-bg: hsl(0, 0%, 98%);
+$white-dm-text-lm-elements:hsl(0, 0%, 100%);
+$weight3:300;
+$weight6:600;
+$weight8:800;
+$font-fam: 'Nunito',
+sans-serif;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.topbar-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 50px;
+    padding: 30px 0;
+}
