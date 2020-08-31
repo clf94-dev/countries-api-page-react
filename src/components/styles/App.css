@@ -129,3 +129,16 @@
 .countries-cont .card-cont .text-cont h4 strong {
   font-weight: 600 !important;
 }
+
+.back-btn-cont {
+  padding: 3% 5%;
+}
+
+.back-btn-cont button {
+  height: 50px;
+  width: 150px;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

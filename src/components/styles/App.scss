@@ -118,3 +118,15 @@ sans-serif;
         }
     }
 }
+
+.back-btn-cont {
+    padding: 3% 5%;
+    button {
+        height: 50px;
+        width: 150px;
+        background-color: transparent;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
