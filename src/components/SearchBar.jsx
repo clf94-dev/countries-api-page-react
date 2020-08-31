@@ -19,7 +19,7 @@ function SearchBar({background}) {
             <div className="search-cont" >
                 <input type="text" style="font-family: ‘Font Awesome 5 Brands’;" placeholder='&#xf002;  Search for your country...'  style={{color: background?'hsl(0, 0%, 100%)' :'hsl(200, 15%, 8%)',backgroundColor: background?'hsl(209, 23%, 22%)' :'hsl(0, 0%, 100%)',border: background? 'none':'1px solid hsl(0, 0%, 52%)' }}
                   />
-                <FormControl variant="filled"  style={{minWidth: 200}} className='select'>
+                <FormControl variant="filled"  style={{minWidth: 200, border: background? '':'1px solid hsl(0, 0%, 52%)'}} className='select'>
                     <InputLabel style={{color: background?'hsl(0, 0%, 100%)' :'hsl(200, 15%, 8%)'}} >Filter by Region</InputLabel>
                     <Select
                    style={{color: background?'hsl(0, 0%, 100%)' :'hsl(200, 15%, 8%)',backgroundColor: background?'hsl(209, 23%, 22%)' :'hsl(0, 0%, 100%)' }}
