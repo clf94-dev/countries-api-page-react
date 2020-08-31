@@ -23,7 +23,7 @@ function Country() {
         <div>
              < TopBar background={darkMode}  setDarkMode = { darkModeClicked} />
   <BackPage background={darkMode} />
-  <CountryInfo name={country}/>
+  <CountryInfo  background={darkMode} name={country}/>
         </div>
     )
 }

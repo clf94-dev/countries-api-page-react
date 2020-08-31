@@ -9,6 +9,14 @@ export default function Home() {
         const [search, setSearch ] =useState('');
         const [filter, setFilter] = useState('');
 
+      //  var param = window.location.pathname;
+      //  var segmArray =param.split('/');
+       // var mode = segmArray.pop();
+       //  if(mode){
+       //      setDark(!darkMode);
+      //   }
+    
+
     function darkModeClicked() {
         setDark(!darkMode);
         console.log(darkMode);
