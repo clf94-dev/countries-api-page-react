@@ -23,6 +23,7 @@
 .topbar-cont .dark-mode-btn {
   padding: 10px 15px;
   border-radius: 5px;
+  cursor: pointer;
   align-items: center;
 }
 
@@ -69,9 +70,25 @@
 
 .search-cont .select {
   height: 50px;
+  border-radius: 5px;
 }
 
 .search-cont .select option {
   font-family: "Nunito", sans-serif;
   font-weight: 300;
+}
+
+.countries-cont {
+  padding: 5%;
+  justify-content: space-between;
+}
+
+.countries-cont .card-cont {
+  width: 300px;
+  height: 350px;
+}
+
+.countries-cont .card-cont img {
+  width: 100%;
+  height: 200px;
 }
