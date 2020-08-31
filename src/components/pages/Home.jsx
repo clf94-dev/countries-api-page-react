@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import TopBar from '../TopBar'
+import SearchBar from '../SearchBar';
 
 export default function Home() {
     const [darkMode,
@@ -13,6 +14,7 @@ export default function Home() {
     return ( 
     <div style= { { backgroundColor: darkMode ? 'hsl(207, 26%, 17%)' : 'hsl(0, 0%, 98%)' } } > 
     < TopBar background={darkMode}  setDarkMode = { darkModeClicked} />
+    <SearchBar background={darkMode} />
      </div>
     );
 }
