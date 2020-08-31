@@ -5,8 +5,8 @@ import './styles/App.css'
 
 function TopBar({background, setDarkMode}) {
     return (
-        <nav>
-            <div className="topbar-cont" style={{color: background?'hsl(0, 0%, 100%)' :'hsl(200, 15%, 8%)'}} >
+        <nav style={{backgroundColor: background?'hsl(209, 23%, 22%)' :''}}>
+            <div className="topbar-cont" style={{color: background?'hsl(0, 0%, 100%)' :'hsl(200, 15%, 8%)' }} >
                 <Link to='/' className='navbar-logo' style={{color: background?'hsl(0, 0%, 100%)' :'hsl(200, 15%, 8%)'}}>
                     Where in the world?
                 </Link>
