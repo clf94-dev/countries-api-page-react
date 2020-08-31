@@ -83,12 +83,49 @@
   justify-content: space-between;
 }
 
+@media screen and (max-width: 756px) {
+  .countries-cont {
+    padding: 10 !important;
+  }
+}
+
 .countries-cont .card-cont {
+  margin-bottom: 60px;
   width: 300px;
-  height: 350px;
+  height: 380px;
+}
+
+@media screen and (max-width: 756px) {
+  .countries-cont .card-cont {
+    width: 90%;
+    margin-left: 2%;
+  }
+  .countries-cont .card-cont img {
+    width: 100% !important;
+    height: 250px;
+  }
 }
 
 .countries-cont .card-cont img {
-  width: 100%;
+  width: 100% !important;
   height: 200px;
+}
+
+.countries-cont .card-cont .text-cont {
+  padding: 7%;
+}
+
+.countries-cont .card-cont .text-cont h3 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.countries-cont .card-cont .text-cont h4 {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.countries-cont .card-cont .text-cont h4 strong {
+  font-weight: 600 !important;
 }

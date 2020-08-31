@@ -23,7 +23,7 @@ function CountriesSection({background, searchState, filterState}) {
     }, []);
 
 
-    const filteredCountries = (searchState !="") ? countries.filter(country => country.name.toLowerCase().includes(searchState.toLowerCase())) : countries.filter(country => country.region.includes(filterState))
+    const filteredCountries = (searchState !=="") ? countries.filter(country => country.name.toLowerCase().includes(searchState.toLowerCase())) : countries.filter(country => country.region.includes(filterState))
 
     return (
         <div className='countries-cont'>
