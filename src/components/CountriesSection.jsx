@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios'
 import CountryCard from './CountryCard'
-import {Grid} from '@material-ui/core';
+import {Grid} from '@material-ui/core/';
 
 function CountriesSection({background, searchState, filterState}) {
     const [countries,

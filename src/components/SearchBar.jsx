@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {Grid, FormControl, InputLabel, Select} from '@material-ui/core'
+import {Grid, FormControl, InputLabel, Select} from '@material-ui/core/'
 import './styles/App.css'
 
 function SearchBar({background, setSearch, setFilter, filterValue}) {
