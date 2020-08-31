@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Nunito", sans-serif;
 }
 
 .topbar-cont {
@@ -9,6 +10,28 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 0 50px;
+  margin: 0 5%;
   padding: 30px 0;
+}
+
+.topbar-cont .navbar-logo {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.topbar-cont .dark-mode-btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.topbar-cont .dark-mode-btn i {
+  margin-top: 3px;
+  padding-right: 5px;
+}
+
+.topbar-cont .dark-mode-btn h3 {
+  font-size: 16px;
+  font-weight: 300;
 }
