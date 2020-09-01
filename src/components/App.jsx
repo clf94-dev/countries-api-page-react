@@ -13,7 +13,7 @@ function App() {
 
      <Router>
        <Switch>
-         <Route path='/:mode' exact component={Home}/>
+         <Route path='/' exact component={Home}/>
          <Route path='/country/:name' exact component={Country}/>
        </Switch>
      </Router>

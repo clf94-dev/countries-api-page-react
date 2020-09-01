@@ -4,6 +4,10 @@ import axios from 'axios'
 
 import './styles/App.css'
 
+import AOS from 'aos'
+import 'aos/dist/aos.css';
+AOS.init();
+
 function CountryInfo({name, background}) {
     const [infoCountry,
         setInfo] = useState([]);
@@ -36,36 +40,55 @@ function CountryInfo({name, background}) {
                             ? 'hsl(207, 26%, 17%)'
                             : 'hsl(0, 0%, 100%)'
                     }}>
-                        <Grid item md={6} xs={12}>
+                        <Grid item md={6} xs={12} data-aos="fade-right" data-aos-duration="1500">
                             <img src={info.flag} alt="flag"/>
                         </Grid>
-                        <Grid item md={6} xs={12} className='text-cont'>
+                        <Grid item md={6} xs={12} className='text-cont' data-aos="fade-left" data-aos-duration="2000">
                             <h2>{info.name}</h2>
                             <Grid container direction='row'>
                                 <Grid item md={6} xs={12}>
                                     <h4>
-                                        <strong>Native Name: </strong>
+                                        <strong>Native Name:
+                                        </strong>
                                         {info.nativeName}</h4>
 
                                     <h4>
-                                        <strong>Population: </strong>
+                                        <strong>Population:
+                                        </strong>
                                         {info.population}</h4>
                                     <h4>
-                                        <strong>Region: </strong>
+                                        <strong>Region:
+                                        </strong>
                                         {info.region}</h4>
                                     <h4>
-                                        <strong>Sub Region: </strong>
+                                        <strong>Sub Region:
+                                        </strong>
                                         {info.subregion}</h4>
                                     <h4>
-                                        <strong>Capital: </strong>
+                                        <strong>Capital:
+                                        </strong>
                                         {info.capital}</h4>
                                 </Grid>
                                 <Grid item md={6} xs={12}>
-                                    <h4><strong>Top Level Domain: </strong>{info.topLevelDomain}</h4>
-                                    <h4 style={{marginRight: '5px'}}><strong>Currencies: </strong>{info.currencies.map(currency => {
+                                    <h4>
+                                        <strong>Top Level Domain:
+                                        </strong>{info.topLevelDomain}</h4>
+                                    <h4
+                                        style={{
+                                        marginRight: '5px'
+                                    }}>
+                                        <strong>Currencies:
+                                        </strong>{info
+                                            .currencies
+                                            .map(currency => {
                                                 return currency.name
                                             })}</h4>
-                                    <h4 style={{marginRight: '5px'}}><strong>Languages: </strong>{info
+                                    <h4
+                                        style={{
+                                        marginRight: '5px'
+                                    }}>
+                                        <strong>Languages:
+                                        </strong>{info
                                             .languages
                                             .map(language => {
                                                 return language.name + ", "
@@ -73,7 +96,12 @@ function CountryInfo({name, background}) {
                                 </Grid>
                             </Grid>
 
-                            <Grid container direction='row' style={{marginTop: '45px'}}>
+                            <Grid
+                                container
+                                direction='row'
+                                style={{
+                                marginTop: '45px'
+                            }}>
                                 <Grid item md={4} xs={12}>
                                     <h4>
                                         <strong>Border Countries:
