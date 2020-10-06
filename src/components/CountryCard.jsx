@@ -40,16 +40,13 @@ function CountryCard({
                         <Grid container direction='column' className='text-cont'>
                             <h3>{name}</h3>
                             <h4>
-                                <strong>Population:
-                                </strong>
+                                <strong>Population: </strong>
                                 {population}</h4>
                             <h4>
-                                <strong>Region:
-                                </strong>
+                                <strong>Region: </strong>
                                 {region}</h4>
                             <h4>
-                                <strong>Capital:
-                                </strong>
+                                <strong>Capital: </strong>
                                 {capital}</h4>
                         </Grid>
                     </Grid>
